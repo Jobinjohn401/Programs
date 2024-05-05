@@ -1,0 +1,15 @@
+def maxel(nums):
+    for i in range(len(nums)):
+        maxElement = max(nums)
+    return maxElement
+
+num_str = input("Enter the array: ")
+num_list = num_str.split(' ')
+nums = []
+
+for num_str in num_list:
+    num_int = int(num_str)
+    nums.append(num_int)
+    
+res = maxel(nums)
+print("Maximum Number of the array :", res)
