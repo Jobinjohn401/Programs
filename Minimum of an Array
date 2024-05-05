@@ -1,1 +1,16 @@
+def minel(nums):
+    minElement = float('inf')
+    for i in range(len(nums)):
+        minElement = min(minElement, nums[i])
+    return minElement
 
+num_str = input("Enter the array: ")
+num_list = num_str.split(' ')
+nums = []
+
+for num_str in num_list:
+    num_int = int(num_str)
+    nums.append(num_int)
+    
+res = minel(nums)
+print("Minimum Number of the array :", res)
